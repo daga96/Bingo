@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Bingo</title>
+  </head>
+  <body>
+    <canvas heigh="400" width="400"></canvas>
+    <div class="controls-wrap">
+      <ul id="events"></ul>
+      <div class="controls">
+        <form id="chat-form">
+          <input id="chat" autocomplete="off" title="chat" />
+          <button id="send">SEND</button>
+        </form>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+  </body>
+</html>
